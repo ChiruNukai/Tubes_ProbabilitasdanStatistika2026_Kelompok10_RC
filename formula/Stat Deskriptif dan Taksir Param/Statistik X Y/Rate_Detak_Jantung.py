@@ -19,7 +19,7 @@ median = (data_50 + data_51) / 2
 variansi = 0
 for x in sorted_data:
     variansi += (x - rerata) ** 2
-
+variansi /= (total_data - 1)
 standar_deviasi = sqrt(variansi).real
 
 # Output
